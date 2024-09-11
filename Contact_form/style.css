@@ -1,0 +1,78 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+height:100vh;
+margin:0;
+background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(93, 8, 8, 0.5)), url('https://cdn.pixabay.com/animation/2023/06/06/06/51/06-51-32-766_512.gif');
+background-size: cover;
+background-position: center;
+
+}
+
+.container{
+    width:300px;
+   padding:20px; 
+   background-color:white;
+   
+   box-shadow:0 0 10px rgba(0,0,0,0.1);/*  no offset and 10px of the blur radius the value 0 0 0 represents black color and 0.1 represents opacity of the shadow*/
+
+}
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.nav-bar{
+    display:flex;
+    justify-content:space-around;
+    margin-bottom:20px;
+}
+
+.nav-bar button{
+    background-color: #2675c9;
+    border:none;
+    padding:10px 20px;
+    color:white;
+    cursor:pointer;
+    border-top-left-radius: 50%;
+   border-bottom-right-radius: 50%;
+   outline:none;
+
+
+}
+.nav-bar button:hover {
+    background-color: skyblue;
+}
+form{
+    display:none;
+}
+form.active {
+    display: block;
+}
+
+label{
+    display:block;
+    
+}
+
+input[type="text"],input[type="password"], input[type="email"], input[type="number"],textarea{
+    width: 90%;
+    padding:10px;
+    margin-bottom:15px;
+    border-radius: 5px;
+    overflow:hidden;
+}
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button[type="submit"]:hover {
+    background-color: #218838;
+}
